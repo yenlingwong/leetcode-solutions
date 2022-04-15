@@ -13,9 +13,7 @@ class Solution(object):
         :type root1: TreeNode
         :type root2: TreeNode
         :rtype: TreeNode
-        """
-    
-            
+        """          
         if not root1:
             return root2
 
