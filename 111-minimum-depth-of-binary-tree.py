@@ -40,12 +40,15 @@ class Solution(object):
         :rtype: int
         """
         
+        # From bottom to the top
+        
         if not root:
             return 0
         # Check if current node exists
         
         if not root.left and not root.right:
             return 1
+        # Check if current node is root node
         
         if not root.left and root.right:
             return 1 + self.minDepthDFS(root.right)
