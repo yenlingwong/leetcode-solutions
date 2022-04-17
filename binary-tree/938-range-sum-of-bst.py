@@ -33,7 +33,6 @@ class Solution(object):
         
         def dfs(node):
             if node:
-                print(node.val)
                 if low <= node.val <= high:
                     self.answer += node.val
                 if node.val > low:
